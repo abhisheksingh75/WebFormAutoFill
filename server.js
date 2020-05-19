@@ -15,11 +15,11 @@ const { name, emailId, url } = require("./config")
   //fill task
   await page.select("#Q6", "16")
   await page.screenshot({ path: "formfill1.png", fullPage: true })
-  //   await page.click("#BN")
-  //   // Wait for search results page to load
-  //   await page.waitForNavigation({ waitUntil: "load" })
-  //   await page.screenshot({ path: "formsubmit1.png", fullPage: true })
-  //   console.log("FOUND!", page.url())
+  await page.click("#BN")
+  // Wait for search results page to load
+  await page.waitForNavigation({ waitUntil: "load" })
+  await page.screenshot({ path: "formsubmit1.png", fullPage: true })
+  console.log("FOUND!", page.url())
   await browser.close()
 })()
 // 2nd task
@@ -37,11 +37,11 @@ const function2 = async () => {
   //fill task
   await page.select("#Q6", "4")
   await page.screenshot({ path: "formfill2.png", fullPage: true })
-  //   await page.click("#BN")
-  //   // Wait for search results page to load
-  //   await page.waitForNavigation({ waitUntil: "load" })
-  //   await page.screenshot({ path: "formsubmit2.png", fullPage: true })
-  //   console.log("FOUND!", page.url())
+  await page.click("#BN")
+  // Wait for search results page to load
+  await page.waitForNavigation({ waitUntil: "load" })
+  await page.screenshot({ path: "formsubmit2.png", fullPage: true })
+  console.log("FOUND!", page.url())
   await browser.close()
 }
 
